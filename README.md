@@ -4,8 +4,12 @@
 
 An application that parses a http request log file and returns statistics.
 
+![Screen Shot 2022-09-09 at 8 47 36 am](https://user-images.githubusercontent.com/106789085/189244203-d7d15709-2c20-404e-a649-5d93a1e6e1b4.png)
+
+
 ## Assumptions
 1. The log file is aways in the following format
+
 `177.71.128.21 - - [10/Jul/2018:22:21:28 +0200] "GET /intranet-analytics/ HTTP/1.1" 200 3574`
 
 2. When calculating top stats - all requests are considered valid. Irrespetive of HTTP method or response code.
@@ -21,7 +25,7 @@ e.g. A response code of 404 (not found error) will still be included in the top 
 
 ## Instructions
 - Clone this respository
-- Move the http log file to be analyzed into the root directory
+- Move the http log file to be analysed into the root directory
 - Run the 'app.py' file with python3
 ~~~
 $ python3 app.py
